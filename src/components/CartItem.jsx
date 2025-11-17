@@ -5,7 +5,7 @@ function CartItem({ item, onUpdateQuantity, onRemove }) {
 
   // Función para formatear el precio en pesos colombianos
   const formatPrice = (price) => {
-    return `$${price.toLocaleString('es-CO')}`;
+    return `$ ${price.toLocaleString('es-CO')}`;
   };
 
   // Calcular subtotal

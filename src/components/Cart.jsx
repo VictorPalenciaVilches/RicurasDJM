@@ -24,7 +24,7 @@ function Cart({
 
   // Función para formatear el precio en pesos colombianos
   const formatPrice = (price) => {
-    return `$${price.toLocaleString('es-CO')}`;
+    return `$ ${price.toLocaleString('es-CO')}`;
   };
 
   // Calcular el total del pedido
@@ -134,15 +134,19 @@ function Cart({
         <div className="flex-1 overflow-y-auto">
           {cartItems.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-              <div className="text-gray-400 mb-4">
-                <MessageCircle className="w-16 h-16 md:w-20 md:h-20 mx-auto" />
-              </div>
-              <p className="text-lg md:text-xl font-semibold text-gray-600 mb-2">
+              <div className="text-6xl mb-4">🛒</div>
+              <p className="text-xl md:text-2xl font-bold text-gray-700 mb-3">
                 Tu carrito está vacío
               </p>
-              <p className="text-sm md:text-base text-gray-500">
-                Agrega productos del menú para comenzar tu pedido
+              <p className="text-base md:text-lg text-gray-600 mb-4">
+                ¡Agrega algo delicioso del menú para comenzar tu pedido!
               </p>
+              <button
+                onClick={onClose}
+                className="mt-4 px-6 py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-lg font-semibold hover:from-red-700 hover:to-orange-600 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
+              >
+                Ver Menú
+              </button>
             </div>
           ) : (
             <div>
@@ -165,7 +169,7 @@ function Cart({
                   {/* Nombre */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Nombre completo <span className="text-red-500">*</span>
+                      Nombre completo
                     </label>
                     <input
                       type="text"
@@ -186,7 +190,7 @@ function Cart({
                   {/* Teléfono */}
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Teléfono <span className="text-red-500">*</span>
+                      Teléfono
                     </label>
                     <input
                       type="tel"
@@ -207,7 +211,7 @@ function Cart({
                   {/* Tipo de entrega */}
                   <div>
                     <label htmlFor="deliveryType" className="block text-sm font-medium text-gray-700 mb-1">
-                      Tipo de entrega <span className="text-red-500">*</span>
+                      Tipo de entrega
                     </label>
                     <select
                       id="deliveryType"
@@ -225,7 +229,7 @@ function Cart({
                   {formData.deliveryType === 'Domicilio' && (
                     <div>
                       <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
-                        Dirección <span className="text-red-500">*</span>
+                        Dirección
                       </label>
                       <input
                         type="text"
@@ -247,7 +251,7 @@ function Cart({
                   {/* Método de pago */}
                   <div>
                     <label htmlFor="paymentMethod" className="block text-sm font-medium text-gray-700 mb-1">
-                      Método de pago <span className="text-red-500">*</span>
+                      Método de pago
                     </label>
                     <select
                       id="paymentMethod"

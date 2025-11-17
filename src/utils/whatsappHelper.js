@@ -1,6 +1,6 @@
 // Función auxiliar para formatear precios en pesos colombianos
 export function formatPrice(price) {
-  return `$${price.toLocaleString('es-CO')}`;
+  return `$ ${price.toLocaleString('es-CO')}`;
 }
 
 // Función para generar el mensaje de WhatsApp con el pedido

@@ -1,3 +1,16 @@
 @import "tailwindcss";
 
-/* Aquí puedes agregar tus estilos personalizados más adelante */
+/* Estilos personalizados */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth scroll en toda la página */
+html {
+  scroll-behavior: smooth;
+}
