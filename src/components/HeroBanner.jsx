@@ -25,7 +25,7 @@ function HeroBanner({ onOrderClick }) {
 
         {/* Eslogan */}
         <p className="text-xl md:text-3xl lg:text-4xl text-white/95 mb-8 md:mb-12 font-medium drop-shadow-lg">
-          Las mejores comidas de Montería
+          El gusto que te mereces 
         </p>
 
         {/* Botones */}
