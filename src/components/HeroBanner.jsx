@@ -1,12 +1,6 @@
 import { ChevronDown, ShoppingCart } from 'lucide-react';
 
 function HeroBanner({ onOrderClick, backgroundImage }) {
-  const scrollToMenu = () => {
-    const menuSection = document.querySelector('main');
-    if (menuSection) {
-      menuSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
 
   return (
     <section 
@@ -44,20 +38,8 @@ function HeroBanner({ onOrderClick, backgroundImage }) {
           El gusto que te mereces 
         </p>
 
-        {/* Botones */}
-        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-fadeInUp-delay-2">
-          {/* Botón Ver Menú Completo */}
-          <button
-            onClick={scrollToMenu}
-            className="group bg-white text-red-600 hover:bg-gray-100 font-bold px-8 md:px-10 py-4 md:py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 text-lg md:text-xl w-full sm:w-auto"
-            aria-label="Ver menú completo"
-          >
-            <span className="flex items-center justify-center gap-2">
-              Ver Menú Completo
-              <ChevronDown className="w-5 h-5 md:w-6 md:h-6 group-hover:animate-bounce transition-transform duration-300" />
-            </span>
-          </button>
-
+        {/* Botón */}
+        <div className="flex justify-center items-center animate-fadeInUp-delay-2">
           {/* Botón Ordenar Ahora */}
           <button
             onClick={onOrderClick}
