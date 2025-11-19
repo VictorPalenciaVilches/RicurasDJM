@@ -6,7 +6,7 @@ function LocationSection() {
       <div className="container mx-auto px-4 md:px-6">
         {/* Título Principal */}
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 md:mb-16">
-          📍 ¿Dónde Estamos?
+           ¿Dónde Estamos?
         </h2>
 
         {/* Grid de dos columnas: Mapa + Información */}
@@ -104,7 +104,7 @@ function LocationSection() {
         <div className="mt-20 md:mt-24 max-w-6xl mx-auto px-4 md:px-6">
           {/* Título del video */}
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
-            🎥 ¿Cómo llegar?
+             ¿Cómo llegar?
           </h3>
           
           {/* Subtítulo */}

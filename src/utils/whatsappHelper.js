@@ -11,7 +11,7 @@ export function generateWhatsAppMessage(cartItems, customerData) {
   }
 
   // Construir el mensaje línea por línea
-  let message = '¡Hola! 👋 Quiero hacer un pedido desde RICURAS DJM:\n\n';
+  let message = '¡Hola! 👋 Quiero hacer un pedido en RICURAS DJM:\n\n';
 
   // Agregar sección de productos
   message += '*PRODUCTOS:*\n';

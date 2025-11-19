@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MessageCircle } from 'lucide-react';
 
 function WhatsAppFloatingButton({ 
-  phoneNumber = '573014237422', 
+  phoneNumber = '573052890338', 
   message = '¡Hola! Tengo una consulta sobre RICURAS DJM' 
 }) {
   const [showTooltip, setShowTooltip] = useState(false);
